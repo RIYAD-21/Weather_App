@@ -5,4 +5,4 @@ For the technologies used in this app, I chose HTML, CSS, and JS for the front-e
 
 Have fun! 😉
 
-To go throw the app, click here ---> weather-app-nu-seven-56.vercel.app
+To go throw the app, click here ---> https://weather-app-nu-seven-56.vercel.app/
