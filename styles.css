@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url('images/blurred-sky-with-clouds-background_1051-952.avif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+}
+#title{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 1.5rem;
+    color:solid rgb(45, 45, 45);
+}
+#city{
+    font-size: 2vh;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: start;
+    padding: 0vh 0vh 0vh 3vh;
+}
+#Submit{
+    background: linear-gradient(115deg, #5bc0ff 10%, #5c59ff 30%, #4a02ff 70%, #796aff 94%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2vh;
+    padding: 1.5vh;
+    transition: 0.4s ease;
+}
+#Submit:hover{
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: linear-gradient(115deg, #5bc0ff 10%,#4a02ff 30%, #5c59ff 70%,  #796aff 90%);
+}
+.Info{
+    display:grid;
+    grid-template-rows: repeat(4,60px);
+    grid-template-columns: repeat(3,160px);
+    gap: 5px;
+    margin-top: 45px;
+}
+.weatherIcon{
+    grid-column: 2/3;
+}
+.temperature{
+    grid-column: 2/3;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.weatherDesc{
+    grid-column: 2/3;
+}
+.feelLikes{
+    grid-column: 1/2;
+}
+.humidity{
+    grid-column: 2/3;
+}
+.wind{
+    grid-column: 3/4;
+}
+.Info div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weatherInfo{
+    background-color: rgba(179, 179, 179, 0.424);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(106, 106, 106);
+    font-size: 0.9rem;
+    text-align: center;
+}
