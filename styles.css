@@ -13,33 +13,33 @@ body{
 }
 .container{
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    min-width: 60vh;
+    padding: 20px 5vh;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
 }
 form{
-    grid-column: 1/4;
     display: flex;
     justify-content: space-between;
+    
 }
 #title{
-    grid-column: 1/4;
     text-align: center;
-    font-size: 1.5rem;
     color:solid rgb(45, 45, 45);
 }
 #city{
-    font-size: 2vh;
     border: none;
     outline: none;
     background-color: rgb(255, 255, 255);
     position: relative;
     text-align: start;
     padding: 0vh 0vh 0vh 3vh;
+    font-size: 1.1rem;
 }
 #Submit{
     background: linear-gradient(115deg, #5bc0ff 10%, #5c59ff 30%, #4a02ff 70%, #796aff 94%);
@@ -47,52 +47,50 @@ form{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 2vh;
     padding: 1.5vh;
     transition: 0.4s ease;
+    font-size: 1rem;
+    font-weight: bold;
 }
 #Submit:hover{
     box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);
     background: linear-gradient(115deg, #5bc0ff 10%,#4a02ff 30%, #5c59ff 70%,  #796aff 90%);
 }
-.Info{
-    display:grid;
-    grid-template-rows: repeat(4,60px);
-    grid-template-columns: repeat(3,160px);
-    gap: 5px;
-    margin-top: 45px;
-}
-.weatherIcon{
-    grid-column: 2/3;
-}
-.temperature{
-    grid-column: 2/3;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.weatherDesc{
-    grid-column: 2/3;
-}
-.feelLikes{
-    grid-column: 1/2;
-}
-.humidity{
-    grid-column: 2/3;
-}
-.wind{
-    grid-column: 3/4;
-}
-.Info div{
+#Info{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+}
+.weatherIcon{
+    margin: 2vh 0 0 0;
+}
+.weatherIcon img{
+    width: 12vh;
+    height: 12vh;
+    position: relative;
+}
+.temperature{
+    font-weight: bold;
+    margin: 1vh;
+    font-size: 2.5rem;
+}
+.weatherDesc{
+    margin: 1vh;
 }
 .weatherInfo{
-    background-color: rgba(179, 179, 179, 0.424);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-    color: rgb(106, 106, 106);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vh;
     font-size: 0.9rem;
-    text-align: center;
+    margin: 2vh 0 0 0;
+}
+.weatherInfo div{
+    background-color: rgb(204, 204, 204);
+    padding: 3vh 4vh;
+    border-radius: 5px;
+    color: rgb(45, 45, 45);
 }
